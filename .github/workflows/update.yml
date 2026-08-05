@@ -1,0 +1,38 @@
+name: Update Amp
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-amp
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - name: Update from the official Homebrew tap
+        run: python3 update.py
+      - name: Validate the flake
+        run: |
+          nix flake check --print-build-logs
+          nix build .#default --print-build-logs
+      - name: Commit the update
+        run: |
+          if git diff --quiet -- sources.json; then
+            echo "Already up to date"
+            exit 0
+          fi
+          version=$(jq -r .version sources.json)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sources.json
+          git commit -m "Update amp-cli to $version"
+          git push
