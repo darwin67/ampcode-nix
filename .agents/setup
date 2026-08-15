@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+git config --global user.name "Darwin D Wu"
+git config --global user.email "darwin67@users.noreply.github.com"
