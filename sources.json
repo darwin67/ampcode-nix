@@ -1,21 +1,21 @@
 {
-  "version": "0.0.1790078445-g3dd8f6",
+  "version": "0.0.1790082161-g365795",
   "sources": {
     "aarch64-darwin": {
-      "url": "https://static.ampcode.com/cli/0.0.1790078445-g3dd8f6/amp-darwin-arm64",
-      "hash": "sha256-l4wrRn6Q+GnahbnQO7mhRdi0tOgMz5LSa3kXEBj8R5I="
+      "url": "https://static.ampcode.com/cli/0.0.1790082161-g365795/amp-darwin-arm64",
+      "hash": "sha256-3DxX2VDm/rePs3R8pKhTX2uNAG2l+zyi7bXJ6g755Ls="
     },
     "x86_64-darwin": {
-      "url": "https://static.ampcode.com/cli/0.0.1790078445-g3dd8f6/amp-darwin-x64",
-      "hash": "sha256-3t5ivf6umS43VwnCa0hBRb+RRcQk8UsOnzpSIiJsFQM="
+      "url": "https://static.ampcode.com/cli/0.0.1790082161-g365795/amp-darwin-x64",
+      "hash": "sha256-TD4EE7uufTckfw67Q36JJh+fRKPDHk3vb8/0A7IH7PM="
     },
     "aarch64-linux": {
-      "url": "https://static.ampcode.com/cli/0.0.1790078445-g3dd8f6/amp-linux-arm64",
-      "hash": "sha256-0ZO9sm1VBynx8XO9GD+MT2BtE3i5LZHps+hT3Q/mFE4="
+      "url": "https://static.ampcode.com/cli/0.0.1790082161-g365795/amp-linux-arm64",
+      "hash": "sha256-rKtaTT4CuGHPH88464O2x5PIeE+A18uZXeDco+UpaTE="
     },
     "x86_64-linux": {
-      "url": "https://static.ampcode.com/cli/0.0.1790078445-g3dd8f6/amp-linux-x64",
-      "hash": "sha256-4hdfifjt/a+vu4PWGYnITPk3XGPGYUi9KhzkP0bSpfE="
+      "url": "https://static.ampcode.com/cli/0.0.1790082161-g365795/amp-linux-x64",
+      "hash": "sha256-XKYNGMnhf2g40v/OAXUEhU8K+hippoqM8MIS2Lre19M="
     }
   }
 }
